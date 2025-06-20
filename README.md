@@ -1,4 +1,4 @@
-##腳踏車影像辨識 (Bicycle Image Recognition)
+# 腳踏車影像辨識 (Bicycle Image Recognition)
 
 元智大學 113-2 學期 EEB215A「電腦視覺與影像處理概論」課程期末專題
 
@@ -6,7 +6,7 @@
 
 學號: 1120418
 
-#專案摘要
+## 專案摘要
 
 本專案旨在實作一個基於傳統電腦視覺技術的物件偵測系統，其目標為訓練並驗證一個能夠在靜態影像中辨識腳踏車的 Haar 級聯分類器 (Haar Cascade Classifier)。專案全程使用 Python 語言及 OpenCV 函式庫作為主要開發工具，涵蓋了從資料集收集、樣本標註、模型訓練、參數調整到最終成果驗證的完整流程。
 
@@ -18,15 +18,15 @@
 
 演算法: Haar-like 特徵 & 級聯分類器 (Cascade Classifier)
 
-#如何執行
+## 如何執行
 
 本專案的模型可用於偵測靜態圖片中的腳踏車。
 
-執行環境
+### 執行環境
 
 請確保您的電腦已安裝 Python 與 OpenCV 函式庫。
 
-執行步驟
+### 執行步驟
 
 檔案結構：請將 detect.py 腳本、存放模型的 classifier 資料夾，以及您想測試的圖片，全部放在同一個目錄下。
 
@@ -34,21 +34,23 @@
 
 image_path = 'your_test_image.jpg'
 
+或將圖片命名為 'test_image.jpg'
+
 執行指令：打開終端機，cd 到您的專案目錄，然後執行以下指令：
 
-'''
+```cmd
 python detect.py
-'''
+```
 
 程式會彈出一個視窗，顯示偵測結果。
 
-專案成果展示 (Demonstration)
+## 專案成果展示
+
+### 原始圖片:
 
 ![待測物](./assets/test_image.jpg)
 
-這是一張用來驗證模型效果的原始圖片。
-
-偵測結果
+### 偵測結果:
 
 ![結果展示](./assets/result.png)
 
@@ -58,7 +60,7 @@ Demo 影片
 
 我們也錄製了一段實際操作 detect.py 的過程影片。
 
-![Demo影片](./demo.mkv)
+![專案 Demo 動畫](./demo.gif)
 
 心得與結論
 
