@@ -19,24 +19,16 @@
 
 執行環境
 請確保您的電腦已安裝 Python 與 OpenCV 函式庫。
-Bash
 
-pip install opencv-python
 執行步驟
-檔案結構：請將 detect.py 腳本、存放模型的 classifier 資料夾，以及您想測試的圖片，全部放在同一個目錄下。您的資料夾結構應如下：
-Your_Project_Folder/
-├── classifier/
-│   └── cascade.xml
-├── detect.py
-└── your_test_image.jpg
+檔案結構：請將 detect.py 腳本、存放模型的 classifier 資料夾，以及您想測試的圖片，全部放在同一個目錄下。
 修改腳本：打開 detect.py 檔案，找到 image_path 變數，並將其值修改為您要測試的圖片檔名。
-Python
 
 image_path = 'your_test_image.jpg'
 執行指令：打開終端機，cd 到您的專案目錄，然後執行以下指令：
-Bash
-
+'''
 python detect.py
+'''
 程式會彈出一個視窗，顯示偵測結果。
 專案成果展示 (Demonstration)
 ![待測物](./assets/test_image.jpg)
